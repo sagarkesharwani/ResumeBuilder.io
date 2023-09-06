@@ -120,5 +120,6 @@
 
 </html> -->
 
-<app-app-header></app-app-header>
+<app-app-header *ngIf="showHeaderAndFooter"></app-app-header>
 <router-outlet></router-outlet>
+<app-footer *ngIf="showHeaderAndFooter"></app-footer>
